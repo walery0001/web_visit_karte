@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height:100vh;
+}
+.head_menu{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-top:solid 5px rgba(170, 57, 29, 1);
+    border-bottom:solid 3px rgba(170, 57, 29, 1);
+}
+.img_head{
+    vertical-align: middle;
+     margin: 20px;
+    
+}
+
+.nav_links{
+margin: 50px;
+}
+.nav_a{
+    text-decoration: none;
+   color: rgba(170, 57, 29, 1);
+}
+
+.nav_a:hover{
+color: black;
+}
+.under_head{
+    height: 4rem;
+    background-color: rgb(244,164,96);
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: brown;
+}
+/*              M O B I L                   */
+
+@media screen and (max-width:642px){
+    .head_menu{
+        flex-direction: column;
+        
+    }
+
+    .nav_links{
+        display: flex;
+        flex-direction:column;
+      margin:0;
+      transition: all 2s ease;
+      height: 0;
+      overflow: hidden;
+       background-color: #901d09;
+    }
+    .newStyle{
+        height: 110px;
+        
+        transition: all 2s ease;
+    }
+     .nav_a{
+       
+        background-color: #901d09;
+        color: beige;
+        text-decoration: none;
+        padding-left: 0.8rem;
+        
+    }
+    .img_head{
+        margin: 0;
+        margin-left: 0.3rem;
+        margin-top: 0.3rem;
+    }
+    .head_text{
+        display: block;
+        text-align:center;
+    }
+    .myBtn{
+        position: absolute;
+    right: 0;
+      margin-right: auto;
+        border: 3px solid red;
+      
+   margin: 10px;
+    cursor: pointer;
+       height: 45px;
+       /* align-self: center; */
+
+    }
+    .btn1,.btn2,.btn3{
+        margin: 10px;
+        width: 30px;
+        border: 1px solid red;
+        transition: all 2s ease; }
+      
+    .change .btn1{
+        transition: all 2s ease;
+        transform: rotate(-45deg) translate(-10px,10px);
+    }    
+    .change .btn2{
+        transition: all 2s ease;
+        opacity: 0;
+    }
+    .change .btn3{
+        transition: all 2s ease;
+        transform: rotate(45deg) translate(-6px,-7px);
+    }
+.nav_a:hover{
+    background-color: orange;
+    padding-left: 1rem;
+    transition: all 1s ease;
+
+}
+}
