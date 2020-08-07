@@ -57,10 +57,13 @@ body {
   height: auto;
   float: left;
   border-radius: 5px;
+  margin: 1rem;
+
 }
 img.right{
 float: right;
 }
+
 /*              M O B I L                   */
 
 @media screen and (max-width: 642px) {
@@ -81,7 +84,7 @@ float: right;
     position: static;
   }
   .newStyle {
-    height: 65px;
+    height: 75px;
 
     transition: all 2s ease;
   }
@@ -160,8 +163,23 @@ float: right;
     margin: 1.1rem;
     text-align: justify;
     font-size: 1rem;
-    line-height: 1.3rem;
+    line-height: 1.1rem;
   }
+  .img_main{
+  width: 250px;
+  height: auto;
+  display: block;
+  float: none;
+  
+  margin: 0 auto;
+margin-top: 0.5rem;
+margin-bottom: 0.5rem;
+}
+img.right{
+  float: none;
+
+
+}
 }
 /*           790            */
 @media screen and (max-width: 790px) {
