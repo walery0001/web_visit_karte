@@ -12,7 +12,7 @@ section {
   border-radius: 5px;
   height: 500px;
   width: 300px;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .7);
   padding-bottom: 1.3rem; 
 
 }
@@ -23,6 +23,7 @@ section {
   line-height: 2.5rem;
   font-family: Josefin Sans, sans-serif;
   color: sandybrown;
+  color: rgb(255, 179, 80);
 
 }
 .ul_topic{
@@ -30,11 +31,11 @@ section {
   border-radius: 5px;
   margin-top: 1rem;
   padding-bottom: 1rem;
-  
   color: sandybrown;
-  color: rgb(244, 164, 96);
-  border-bottom: 1px solid sandybrown;
 
+  color: rgb(226, 101, 17);
+  border-bottom: 1px solid sandybrown;
+height: 50px;
  
 }
 
@@ -42,7 +43,7 @@ section.left {
   margin-left: 4rem;
   
   background-image: url('img/dirt.jpg');
-  
+  padding-bottom: 1rem;
   
 }
 section.center {
@@ -65,13 +66,10 @@ background-image: url('img/clean.jpg');
   height:450px;
     }
     .ul_liste {
-      
-      font-size: 1.3rem;
       line-height: 2.1rem;
       
     }
     .ul_topic {
-      font-family: Josefin Sans, sans-serif;
       margin-bottom: 1rem;
       font-size: 1.5rem;
     }
@@ -83,119 +81,71 @@ background-image: url('img/clean.jpg');
     }
 }
 @media screen and (max-width:990px){
-  .ul_main{
-   
-  }
   section {
   width: 300px;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  padding-bottom: 0.5rem; 
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .ul_topic {
-      font-family: Josefin Sans, sans-serif;
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      color: lawngreen;
-    }
-    .ul_liste {
+  height: 500px;
+  padding-bottom: 1rem; 
       
-      font-size: 1rem;
-      line-height: 1.5rem;
     }
-   
     section.left {
-      margin-top: 0.5rem;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 1.5rem;
-      
-    }
-    section.center{
-      margin-top: 0.5rem;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 1.5rem;
+      margin-left: 0.5rem;
     }
     section.right {
-      margin-top: 0.5rem;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 1.5rem;
+      margin-right: 0.5rem;
     }
-    
-}
+    }
+@media screen and (max-width:915px){
+  
+  section {
+  width: 250px;
+    }
+  
+
 @media screen and (max-width:790px){
   .ul_main{
       flex-direction: column;
   }
-  section {
-      margin: 0 auto;
-    }
+  section{
+    width: 350px;
+      height: 450px;
+  }
     .ul_liste {
-      /* font-weight: bold; */
-      font-size: 1rem;
-      line-height: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 2rem;
     }
     .ul_topic {
-      font-family: Josefin Sans, sans-serif;
-      margin-bottom: 1rem;
-      color: #7a3d32;
-      color: rgba(170, 57, 29, 1);
       font-size: 1.3rem;
-      color: red;
     }
     section.left {
       margin: 0 auto;
-      margin-top: 1.5rem;
-      margin-bottom:1.5rem;
+      
+margin-top: 1.5rem;
+margin-bottom: 1rem;
     }
     section.center{
-margin-top:1.5rem;
-margin-bottom:1.5rem;
+      margin: 0 auto;
     }
     section.right {
      margin: 0 auto;
       margin-bottom: 1.5rem;
-      margin-top: 1.5rem;
+      margin-top: 1rem;
     }
 }
 @media screen and (max-width:642px){
-    .ul_main{
-        flex-direction: column;
+    section {
+      height: 500px;
+      width: 300px;
     }
-      section {
-        margin: 0 auto;
-        
-  
-      }
+     
       .ul_liste {
         /* font-weight: bold; */
         font-size: 1.2rem;
-      line-height: 1.5rem;
+      
       }
       .ul_topic {
-        font-family: Josefin Sans, sans-serif;
-        
-       /* color: #7a3d32;*/
-        color:pink;
+       
+        font-size: 1.4rem;
         font-size: 1.3rem;
       }
-      section.left {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0.5rem;
-        margin-bottom: 1.5rem;
-      }
-      section.center{
-margin-top: 1.5rem;
-margin-bottom: 1.5rem; 
-      }
-      section.right {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1.5rem;
-      }
+      
 }

@@ -1,6 +1,7 @@
 main {
   display: flex;
   margin-top: 2rem;
+justify-content: space-between;
 }
 
 .li_img {
@@ -13,13 +14,35 @@ li {
   font-size: 1.5rem;
   font-family: Josefin Sans, sans-serif;
   padding: 2rem;
-  margin-right: 9rem;
+  padding-right: 0.5rem;
+  
 }
 .map {
-  width: 700px;
+  width: 50vw;
+
   height: auto;
-  border: 1px solid brown;
-  margin: 2rem 1rem 1rem 2rem;
+  border: 0.5px solid brown;
+  margin: 1rem 1rem 1rem 1rem;
+  
+
+}
+
+
+@media screen and (max-width: 1011px) {
+  main {
+    flex-direction: column;
+    margin-top: 1rem;
+    /* align-items: center; */
+  }
+  .map {
+    width: auto;
+    height: 400px;
+    margin: 2rem 1rem 2rem 1rem;
+  }
+  li {
+    font-size: 1.2rem;
+    text-decoration: none; 
+  }
 }
 
 @media screen and (max-width: 642px) {
@@ -33,6 +56,10 @@ li {
     padding: 1.4rem;
     margin-right: 0;
   }
+  .kontaktText{
+display: block;
+padding-top: 1rem;
+  }
   .map {
     width: auto;
     height: 300px;
@@ -43,21 +70,5 @@ li {
       width: 90vw;
       height: auto;
     }
-  }
-}
-@media screen and (max-width: 790px) {
-  main {
-    flex-direction: column;
-    margin-top: 1rem;
-    /* align-items: center; */
-  }
-  .map {
-    width: auto;
-    height: 400px;
-    margin: 2rem 1rem 2rem 1rem;
-  }
-  li {
-    font-size: 1.2rem;
-    text-decoration: none;
   }
 }
